@@ -1,3 +1,11 @@
+const http = require('http');
+const server = http.createServer((req, res) => {
+  res.writeHead(200);
+  res.end('ok');
+});
+server.listen(3000);
+
+
 var mineflayer = require('mineflayer');
 
 var host = "YazzDev.aternos.me";
